@@ -49,7 +49,7 @@ public class Capture extends Thread{
 	private void writePoint(){
 		Point currentPoint = mouseMover.getPointerPos();
 		try {
-			outStream.write(currentTime + " " + currentPoint.getX() + " " + currentPoint.getY() + "\n");
+			outStream.write(currentTime + " " + currentPoint.getX() + " " + currentPoint.getY() + "0" + "\n");
 			outStream.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Robot;
+import java.awt.event.InputEvent;
 
 public class MouseMover {
 	Robot robot;
@@ -37,6 +38,17 @@ public class MouseMover {
 	
 	public Point getPointerPos(){
 		return MouseInfo.getPointerInfo().getLocation();
+	}
+	
+	public void mouseClick(){
+		robot.mousePress(InputEvent.BUTTON1_MASK);
+		try {
+			Thread.sleep(5);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		robot.mouseRelease(InputEvent.BUTTON1_MASK);
 	}
 
 }
