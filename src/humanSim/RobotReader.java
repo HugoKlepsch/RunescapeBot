@@ -11,7 +11,11 @@ public class RobotReader {
 	public static final int COMMAND_MOVEMOUSE = 1;
 	public static final int COMMAND_WAIT = 2;
 	public static final int COMMAND_CLICK = 3;
-	public static final int COMMAND_CLICK_BACKPACK = 4;
+	public static final int COMMAND_OPEN_BACKPACK = 4;
+	public static final int COMMAND_PAN_CAM = 5;
+	public static final int COMMAND_ZOOMIN = 6;
+	public static final int COMMAND_ZOOMOUT = 7;
+	public static final int COMMAND_OPEN_MAP = 8;
 	
 	
 	public RobotReader(MouseMover mouse, String filename){
