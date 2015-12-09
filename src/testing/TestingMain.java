@@ -1,23 +1,17 @@
-<<<<<<< HEAD
+
 package testing;
+
+import humanSim.Capture;
+import humanSim.MouseMover;
 
 public class TestingMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		MouseMover mouseMover = new MouseMover();
+		Capture capDev = new Capture("Capture.txt", mouseMover, 100);
+		capDev.start();
+		
 	}
 
 }
-=======
-package testing;
 
-public class TestingMain {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
->>>>>>> 976e540e3e4f698f65bafd3965e114aa1d94bb26
