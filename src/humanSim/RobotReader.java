@@ -56,6 +56,22 @@ public class RobotReader {
 					case RobotReader.COMMAND_CLICK:
 						mouse.mouseClick();
 						break;
+					case RobotReader.COMMAND_OPEN_BACKPACK:
+						//TODO: IMPLEMENT
+						break;
+					case RobotReader.COMMAND_PAN_CAM:
+						//TODO: IMPLEMENT
+						break;
+					case RobotReader.COMMAND_ZOOMIN:
+						//TODO: IMPLEMENT
+						break;
+					case RobotReader.COMMAND_ZOOMOUT:
+						//TODO: IMPLEMENT
+						break;
+					case RobotReader.COMMAND_OPEN_MAP:
+						//TODO: IMPLEMENT
+						break;
+											
 					default:
 						System.err.println("Command parse failed");
 						System.err.println("line error: \n\t" + line);
